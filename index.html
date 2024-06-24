@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- BOOTSRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <!-- CSS -->
+    <link href="css/generales.css" rel="stylesheet">
+    <link href="css/sidebar.css" rel="stylesheet">
+    <!-- JQUERY -->
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <!-- JS -->
+    <script type="text/javascript" src="js/sidebar.js"></script>
+    <!-- LINK DE LOS ICONOS -->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
+    <!-- LINK DEL ANIMATION -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Curriculum Vitae</title>
+</head>
+<body>
+<main class="wrapper">
+    <aside id="sidebar">
+        <div class="d-flex">
+            <button id="toggle-btn" type="button">
+                <i class="lni lni-grid-alt"></i>
+            </button>
+        </div>
+        <ul class="sidebar-nav">
+            <li class="sidebar-item">
+                <a href="#about_me" class="sidebar-link link__mostrar">
+                    <i class="lni lni-users"></i>
+                    <span>About Me</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#experience" class="sidebar-link link__mostrar">
+                    <i class="lni lni-briefcase"></i>
+                    <span>Professional Experience</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#education" class="sidebar-link link__mostrar">
+                    <i class="lni lni-school-bench-alt"></i>
+                    <span>Education</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#aditional_skills" class="sidebar-link link__mostrar">
+                    <i class="lni lni-star-half"></i>
+                    <span>Aditional Skills</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="documents/CV_CastilloPonceAlexis.pdf" class="sidebar-link">
+                    <i class="lni lni-github"></i>
+                    <span>My Github</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="documents/CV_CastilloPonceAlexis.pdf" class="sidebar-link" download="CV_CastilloPonceAlexis">
+                    <i class="lni lni-folder"></i>
+                    <span>Download CV</span>
+                </a>
+            </li>
+        </ul>
+        <div class="sidebar-footer">
+            <a href="#" class="sidebar-link">
+                <i class="lni lni-exit"></i>
+                <span>BACK TO MY PROFILE</span>
+            </a>
+        </div>
+    </aside>
+    <section class="main p-3">
+        <!-- DYNAMIC CONTENT FOR CV -->
+        <!-- ABOUT ME... -->
+        <article id="about_me" class="articles__cv animate__animated animate__fadeInDown">
+            <h1 class="articles__headers">About Me...</h1>
+            <div class="content__about">
+                <img src="img/foto_perfil.jpg" alt="foto_perfil" class="about__photo">
+                <div class="content__data">
+                    <label class="about__text">
+                        I am a 22-year-old <span class="fw-bold">software engineer</span> passionate about technology, with a solid academic
+                        background
+                        and professional experience in various business fields. My enthusiasm for software development
+                        and
+                        technological innovation has led me to get involved in challenging projects and to acquire
+                        technical and managerial skills that allow me to effectively contribute to organizational goals.
+                    </label>
+                    <label class="about__text my-3">
+                        I am committed to excellence and always seek to improve my knowledge and skills to keep up with
+                        the
+                        <span class="fw-bold">latest trends</span> and advances in the field of technology.
+                    </label>
+                </div>
+            </div>
+        </article>
+        <!-- PROFESSIONAL EXPERIENCE -->
+        <article id="experience" class="articles__cv animate__animated animate__slideInLeft">
+            <h1 class="articles__headers">Professional Experience</h1>
+            <div class="content__experiences">
+                <div class="experience__group">
+                    <h2 class="experience__name fw-bold">Madhouse Studio</h2>
+                    <h3 class="experience__date fw-light fst-italic">December 2022 - Present</h3>
+                    <h4 class="experience__occupation fw-bold">Software Engineer</h4>
+                    <ul class="list-group list-group-flush experience__tasks">
+                        <li class="list-group-item">
+                            <span class="fw-bold fst-italic">Project Requirements and Estimation</span>
+                            <p class="description__task">
+                                Gathering and analysing project requirements to provide accurate estimates and quotes
+                                for several software development projects for clients including Price Shoes, Andrea,
+                                Essilor Luxottica, Habers, Manpower, among others.
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold fst-italic">Best Practices in Software Development</span>
+                            <p class="description__task">
+                                Leading a multidisciplinary team of software developers and designers,
+                                ensuring project goals and deliverables
+                                were met on time using agile methodologies as scrum.
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold fst-italic">Team Leadership</span>
+                            <p class="description__task">
+                                Developing software applications following industry best practices,
+                                ensuring high quality, maintainability, and
+                                scalability of code using different technologies such as PHP, JS, JAVA, SQL.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="experience__group">
+                    <h2 class="experience__name fw-bold">Pergamigos</h2>
+                    <h3 class="experience__date fw-light fst-italic">April 2019 - November 2019</h3>
+                    <h4 class="experience__occupation fw-bold">Web Developer</h4>
+                    <ul class="list-group list-group-flush experience__tasks">
+                        <li class="list-group-item">
+                            <span class="fw-bold fst-italic">UI/UX Design and Full-Stack Development</span>
+                            <p class="description__task">
+                                Designing an intuitive and responsive user interface to enhance the user experience
+                                across various devices.
+                                Developing the website’s front-end and back-end, ensuring seamless integration
+                                between user interactions and server responses.
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold fst-italic">E-commerce Functionality</span>
+                            <p class="description__task">
+                                Integrating payment gateways to facilitate secure online transactions.
+                                Developing features for order tracking and management, as well as
+                                customer registration and profile management
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold fst-italic">Deployment and Support</span>
+                            <p class="description__task">
+                                Successfully launching the website on a production server and offering
+                                post-launch support and updates as needed.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </section>
+</main>
+</body>
+</html>

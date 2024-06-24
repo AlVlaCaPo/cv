@@ -1,0 +1,99 @@
+:root{
+    --primary: #943268;
+    --primary-oscuro: #602144;
+    --secondary: #543245;
+    --animate-delay: 0.5s;
+}
+
+
+body{
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 300;
+}
+
+.articles__cv{
+    margin: 2rem 8rem;
+}
+
+.articles__headers{
+    font-size: 5rem;
+}
+
+/** CSS FOR ABOUT ME **/
+
+.content__about{
+    position: relative;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 30% auto;
+    margin: 4rem 0;
+}
+
+.content__about::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    background: var(--primary-oscuro);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+
+.about__photo{
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    border: 10px solid black;
+    max-width: 100%;
+}
+
+.content__data{
+    align-items: center;
+    background-color: var(--primary-oscuro);
+    display: grid;
+    font-size: 1.5rem;
+    height: 100%;
+    padding: 4rem;
+}
+
+.about__text{
+    color: #ffffff;
+    text-align: justify;
+}
+
+/** CSS FOR PROFESSIONAL EXPERIENCES **/
+
+.content__experiences{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.experience__group{
+    margin: 3rem;
+}
+
+.experience__date{
+    font-size: 1rem;
+}
+
+.experience__occupation{
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+}
+
+.experience__tasks{
+    margin-top: 1rem;
+}
+
+.list-group-item{
+    background-color: #fafbfe !important;
+}
+
+.description__task{
+    margin-top: 1rem;
+    text-align: justify-all;
+}
