@@ -16,6 +16,7 @@ body{
 }
 
 .articles__headers{
+    margin: 0 4rem;
     font-size: 5rem;
 }
 
@@ -25,8 +26,8 @@ body{
     position: relative;
     align-items: center;
     display: grid;
-    grid-template-columns: 30% auto;
-    margin: 4rem 0;
+    grid-template-columns: calc( (100% - 5rem) * .3) auto;
+    margin: 5rem 4rem;
 }
 
 .content__about::after {
@@ -70,10 +71,11 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
+    margin: 0 4rem;
 }
 
 .experience__group{
-    margin: 3rem;
+    margin: 4rem 2rem;
 }
 
 .experience__date{
@@ -90,10 +92,52 @@ body{
 }
 
 .list-group-item{
+    margin-top: 1rem;
     background-color: #fafbfe !important;
 }
 
 .description__task{
     margin-top: 1rem;
-    text-align: justify-all;
+    text-align: justify;
+}
+
+/** CSS FOR EDUCATION **/
+.content__education{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 10px;
+    margin: auto;
+    max-width: 70vw;
+    padding-top: 4rem;
+}
+
+.education__group{
+    align-items: center;
+    border-bottom: 5px solid var(--primary-oscuro);
+    display: grid;
+    grid-template-columns: 20% auto;
+    margin: 2rem 0;
+    padding-bottom: 2rem;
+}
+
+
+.education__photo{
+    margin-left: 3rem;
+    max-width: 50%;
+}
+
+.education__institution{
+    font-size: 2rem;
+}
+
+.education__school{
+    font-size: 1.4rem;
+}
+
+.education__date{
+    font-size: 1.2rem;
+}
+
+.education__document{
+
 }
